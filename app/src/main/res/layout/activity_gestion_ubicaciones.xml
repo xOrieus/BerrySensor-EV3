@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="16sp"
+    tools:context=".GestionUbicacionesActivity">
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:padding="16sp"
+        android:gravity="center"
+        android:layout_weight="0"
+        android:text="@string/opc_ubicacion"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16sp">
+
+
+        <Button
+            android:id="@+id/ingresarUbicacionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="8sp"
+            android:padding="16sp"
+            android:text="@string/ingresar_ubicaciones"
+            android:backgroundTint="#558B2F"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+
+        <Button
+            android:id="@+id/mostrarUbicacionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="8sp"
+            android:backgroundTint="#01579B"
+            android:padding="16sp"
+            android:text="@string/mostrar_ubicaciones"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

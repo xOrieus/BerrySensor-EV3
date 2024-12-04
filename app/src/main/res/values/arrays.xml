@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipo_sensor">
+        <item>Temperatura</item>
+        <item>Humedad</item>
+    </string-array>
+    <string-array name="ubicacion_sensor">
+        <item>Invernadero Principal</item>
+        <item>Huerto exterior</item>
+    </string-array>
+    <string-array name="registro_instante">
+        <item>2024-09-19 10:50:14</item>
+        <item>2024-09-19 10:55:43</item>
+        <item>2024-09-19 10:56:12</item>
+        <item>2024-09-19 10:57:23</item>
+        <item>2024-09-19 11:00:53</item>
+    </string-array>
+    <string-array name="registro_lectura">
+        <item>20.4°</item>
+        <item>19.2°</item>
+        <item>21.4°</item>
+        <item>22.1°</item>
+        <item>20.5°</item>
+    </string-array>
+    <string-array name="sensores_array">
+        <item>Sensor 1 Interior</item>
+        <item>Sensor 2 Interior</item>
+        <item>Sensor 3 Interior</item>
+        <item>Sensor 4 Interior</item>
+        <item>Sensor 1 Exterior</item>
+    </string-array>
+</resources>

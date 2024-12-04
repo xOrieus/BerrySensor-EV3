@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16sp"
+    tools:context=".IngresarSensoresActivity">
+
+
+    <TextView
+        android:id="@+id/tituloSensoresTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="26sp"
+        android:padding="16sp"
+        android:text="@string/ingresar_sensores"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    // texto nombre del sensor
+
+    <EditText
+        android:id="@+id/nombreSensorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tituloSensoresTextView"
+        android:layout_margin="8sp"
+        android:hint="@string/nombre_sensor"
+        android:inputType="text"
+        android:padding="16sp"
+        android:background="@drawable/styles"/>
+
+
+    // texto descripcion del sensor
+
+    <EditText
+        android:id="@+id/descripcionSensorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombreSensorEditText"
+        android:layout_margin="8sp"
+        android:hint="@string/descripcion_sensor"
+        android:inputType="text"
+        android:padding="16sp"
+        android:background="@drawable/styles"/>
+
+    // texto ideal del sensor
+
+    <EditText
+        android:id="@+id/idealSensorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descripcionSensorEditText"
+        android:layout_margin="8sp"
+        android:hint="@string/ideal_sensor"
+        android:inputType="numberDecimal"
+        android:padding="16sp"
+        android:background="@drawable/styles"/>
+
+
+    <TextView
+        android:id="@+id/tipoTextoSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idealSensorEditText"
+        android:layout_marginBottom="-12sp"
+        android:padding="16sp"
+        android:text="@string/tipo_texto"
+        android:textSize="16sp" />
+
+    // spinner tipo sensor
+
+    <Spinner
+        android:id="@+id/tipoSensorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tipoTextoSpinner"
+        android:layout_margin="8sp"
+        android:padding="16sp"
+        android:background="@drawable/styles"
+        android:spinnerMode="dropdown"/>
+
+    <TextView
+        android:id="@+id/ubicacionTextoSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tipoSensorSpinner"
+        android:layout_marginBottom="-12sp"
+        android:padding="16sp"
+        android:text="@string/ubicacion_texto"
+        android:textSize="16sp" />
+
+    // spinner ubicacion sensor
+
+    <Spinner
+        android:id="@+id/ubicacionSensorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ubicacionTextoSpinner"
+        android:layout_margin="8sp"
+        android:padding="16sp"
+        android:background="@drawable/styles"
+        android:spinnerMode="dropdown"/>
+
+
+
+
+    // boton ingresar
+
+    <Button
+        android:id="@+id/ingresarSensorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ubicacionSensorSpinner"
+        android:layout_margin="8sp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#558B2F"
+        android:onClick="ingresar"
+        android:padding="16sp"
+        android:text="@string/ingresar"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/mostrarSensoresButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48sp"
+        android:backgroundTint="#01579B"
+        android:padding="16sp"
+        android:text="@string/mostrar_sensores"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

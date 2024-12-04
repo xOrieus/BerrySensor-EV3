@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">BerrySensor App</string>
+    <string name="msj_bienvenida">¡Bienvenid@ a BerrySensor App!</string>
+
+    <string name="opc_sensor">Gestión de Sensores</string>
+    <string name="ingresar_sensores">Ingresar Sensores</string>
+    <string name="modificar_sensores">Modificar Sensores</string>
+    <string name="mostrar_sensores">Mostrar Sensores</string>
+    <string name="nombre_sensor">Nombre del Sensor</string>
+    <string name="descripcion_sensor">Descripcion del Sensor</string>
+    <string name="ideal_sensor">Ideal del Sensor</string>
+    <string name="ubicacion_texto">Ubicación</string>
+    <string name="tipo_texto">Tipo</string>
+    <string name="sensores">Sensores</string>
+    <string name="opc_mostrar_sensores">Sensores Ingresados</string>
+    <string name="nombre_mod_sensor">Ingrese el nuevo Nombre del sensor</string>
+    <string name="descripcion_mod_sensor">Ingrese la nueva Descripcion del Sensor</string>
+    <string name="ideal_mod_sensor">Ingrese el nuevo Ideal del Sensor</string>
+    <string name="ubicacion_mod_texto">Ubicación </string>
+    <string name="tipo_mod_texto">Tipo</string>
+    <string name="buscar_sensor">Ingrese el nombre del sensor a buscar</string>
+
+    <string name="opc_ubicacion">Gestión de Ubicaciones</string>
+    <string name="ingresar_ubicaciones">Ingresar Ubicaciones</string>
+    <string name="nombre_ubicacion"> Nombre de la Ubicación</string>
+    <string name="descripcion_ubicacion">Descripción de la Ubicación</string>
+    <string name="mostrar_ubicaciones">Mostrar Ubicaciones</string>
+    <string name="opc_mostrar_ubicaciones">Ubicaciones Ingresadas</string>
+
+    <string name="opc_registro">Registro de Lecturas</string>
+
+    <string name="buscar">Buscar</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="nombre">Nombre</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="ideal">Ideal</string>
+
+</resources>

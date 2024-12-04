@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "32991999103",
+    "project_id": "berrysensor-50050",
+    "storage_bucket": "berrysensor-50050.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32991999103:android:71874462869c7ae9a2fb4a",
+        "android_client_info": {
+          "package_name": "com.example.berrysensor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAObZjbIZu9jTfRpnTnUzZs1wZUFweie9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

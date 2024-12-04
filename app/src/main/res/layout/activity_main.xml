@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="16sp"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:padding="16sp"
+        android:gravity="center"
+        android:layout_weight="0"
+        android:text="@string/msj_bienvenida"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16sp">
+
+// boton gestion de sensores
+        <Button
+            android:id="@+id/sensoresButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="8sp"
+            android:backgroundTint="#01579B"
+            android:padding="16sp"
+            android:text="@string/opc_sensor"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        // boton gestion de ubicaciones
+        <Button
+            android:id="@+id/ubicacionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="8sp"
+            android:backgroundTint="#01579B"
+            android:padding="16sp"
+            android:text="@string/opc_ubicacion"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        // boton registro de lecturas
+        <Button
+            android:id="@+id/registroButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_margin="8sp"
+            android:backgroundTint="#01579B"
+            android:padding="16sp"
+            android:text="@string/opc_registro"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

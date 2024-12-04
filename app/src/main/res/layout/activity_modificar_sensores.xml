@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16sp"
+    tools:context=".ModificarSensoresActivity">
+
+
+    <TextView
+        android:id="@+id/tituloSensoresTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="26sp"
+        android:padding="16sp"
+        android:text="@string/modificar_sensores"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    // texto nombre del sensor
+
+    <EditText
+        android:id="@+id/nombreSensorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tituloSensoresTextView"
+        android:layout_toStartOf="@id/buscarSensorButton"
+        android:layout_margin="8sp"
+        android:hint="@string/buscar_sensor"
+        android:inputType="text"
+        android:padding="16sp"
+        android:background="@drawable/styles"/>
+
+    // botón buscar
+
+    <Button
+        android:id="@+id/buscarSensorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloSensoresTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8sp"
+        android:backgroundTint="#01579B"
+        android:onClick="buscar"
+        android:padding="16sp"
+        android:text="@string/buscar"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+
+
+
+    // texto nueva descripcion del sensor
+
+    <EditText
+        android:id="@+id/descripcionSensorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombreSensorEditText"
+        android:layout_margin="8sp"
+        android:hint="@string/descripcion_mod_sensor"
+        android:inputType="text"
+        android:padding="16sp"
+        android:background="@drawable/styles"/>
+
+    // texto nuevo ideal del sensor
+
+    <EditText
+        android:id="@+id/idealSensorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descripcionSensorEditText"
+        android:layout_margin="8sp"
+        android:hint="@string/ideal_mod_sensor"
+        android:inputType="numberDecimal"
+        android:padding="16sp"
+        android:background="@drawable/styles"/>
+
+
+
+    // texto tipo
+    <TextView
+        android:id="@+id/tipoTextoSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idealSensorEditText"
+        android:layout_marginBottom="-12sp"
+        android:padding="16sp"
+        android:text="@string/tipo_mod_texto"
+        android:textSize="16sp" />
+
+    // spinner tipo sensor
+
+    <Spinner
+        android:id="@+id/tipoSensorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tipoTextoSpinner"
+        android:layout_margin="8sp"
+        android:entries="@array/tipo_sensor"
+        android:padding="16sp"
+        android:background="@drawable/styles"/>
+
+
+    // texto ubicacion
+    <TextView
+        android:id="@+id/ubicacionTextoSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tipoSensorSpinner"
+        android:layout_marginBottom="-12sp"
+        android:padding="16sp"
+        android:text="@string/ubicacion_mod_texto"
+        android:textSize="16sp" />
+
+    // spinner ubicacion sensor
+
+    <Spinner
+        android:id="@+id/ubicacionSensorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ubicacionTextoSpinner"
+        android:layout_margin="8sp"
+        android:entries="@array/ubicacion_sensor"
+        android:padding="16sp"
+        android:background="@drawable/styles"/>
+
+    // boton modificar
+
+    // boton modificar
+
+    <Button
+        android:id="@+id/ModificarSensorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ubicacionSensorSpinner"
+        android:layout_margin="8sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8sp"
+        android:backgroundTint="#BAA206"
+        android:layout_toStartOf="@id/eliminarSensorButton"
+        android:onClick="modificar"
+        android:padding="16sp"
+        android:text="@string/modificar"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    // boton eliminar
+
+    <Button
+        android:id="@+id/eliminarSensorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ubicacionSensorSpinner"
+
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8sp"
+        android:backgroundTint="#B71C1C"
+        android:onClick="eliminar"
+        android:padding="16sp"
+        android:text="@string/eliminar"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+// boton mostrar sensores
+    <Button
+        android:id="@+id/mostrarSensoresButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48sp"
+        android:backgroundTint="#01579B"
+        android:padding="16sp"
+        android:text="@string/mostrar_sensores"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+
+
+</RelativeLayout>

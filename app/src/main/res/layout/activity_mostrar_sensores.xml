@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16sp"
+    android:orientation="vertical"
+    tools:context=".MostrarSensoresActivity">
+
+    <TextView
+        android:id="@+id/tituloSensoresIngresadosTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:padding="16sp"
+        android:text="@string/opc_mostrar_sensores"
+        android:textAlignment="center"
+        android:background="#64B5F6"
+        android:textSize="22sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaSensoresRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BFBBDEFB"
+        tools:listitem="@layout/recycler_mostrar_sensores" />
+
+</LinearLayout>

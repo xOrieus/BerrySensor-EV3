@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16sp"
+    tools:context=".IngresarUbicacionesActivity">
+
+    <TextView
+        android:id="@+id/tituloUbicacionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ingresar_ubicaciones"
+        android:padding="16sp"
+        android:layout_margin="26sp"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        />
+
+    // nombre ubicacion
+    <EditText
+        android:id="@+id/nombreUbicacionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_ubicacion"
+        android:layout_below="@+id/tituloUbicacionTextView"
+        android:layout_margin="8sp"
+        android:padding="16sp"
+        android:inputType="text"
+        android:background="@drawable/styles"/>
+
+// descripcion ubicacion
+    <EditText
+        android:id="@+id/descripcionUbicacionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/descripcion_ubicacion"
+        android:layout_below="@+id/nombreUbicacionEditText"
+        android:layout_margin="8sp"
+        android:padding="16sp"
+        android:inputType="text"
+        android:background="@drawable/styles"/>
+
+// boton ingresar
+    <Button
+        android:id="@+id/ingresarUbicacionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingresar"
+        android:layout_below="@id/descripcionUbicacionEditText"
+        android:layout_margin="8sp"
+        android:layout_alignParentRight="true"
+        android:padding="16sp"
+        android:backgroundTint="#558B2F"
+        android:onClick="ingresar"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+
+    // boton mostrar ubicaciones
+    <Button
+        android:id="@+id/mostrarUbicacionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mostrar_ubicaciones"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48sp"
+        android:padding="16sp"
+        android:backgroundTint="#01579B"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+</RelativeLayout>
